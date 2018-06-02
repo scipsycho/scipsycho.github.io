@@ -7,13 +7,23 @@ list_of_tables.push(document.getElementById('detail_1'));
 list_of_tables.push(document.getElementById('detail_2'));
 list_of_tables.push(document.getElementById('detail_3'));
 list_of_tables.push(document.getElementById('detail_4'));
-// var id=0;
+var id=0;
 var index=0;
 var temp;
 var temp2;
 function dummy(){
 }
 
+
+window.onmouseover=function(){
+  temp=0;
+  for(var i=0;i<100;i++){
+    temp+=0.01
+    document.getElementById('info').style.opacity=toString(temp);
+    setTimeout(dummy,2000)
+  }
+  document.getElementById('info').style.opacity="1";
+};
 left_arrow.onclick=function(){
 
     temp=1;
