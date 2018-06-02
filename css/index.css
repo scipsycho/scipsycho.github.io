@@ -631,3 +631,8 @@ input:focus,textarea:focus{
 	position: relative;
 		top: 60%;
 }
+
+#copy_right a{
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
