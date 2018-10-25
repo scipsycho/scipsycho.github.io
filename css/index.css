@@ -437,21 +437,41 @@ body, html{
 }
 
 #Skills{
-	position: relative;
-	display: inline-block;
-	top: 154%;
+	position: absolute;
+	/* display: inline-block; */
+	top: 175%;
 	width: 100%;
-	height: 150%;
+	height: 100%;
 	font-family: data_font;
 }
 
 #skill_box{
-	top:25%;
+	top:30%;
 	position:inherit;
-	width: 70%;
-	left: 15%;
-	height: 38%;
 
+ 	display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 100%;
+	height:750px;
+
+}
+
+#skill_box table{
+	top: 20%;
+	display: inline-block;
+	border-spacing: 0px;
+	width: 100%;
+}
+
+#skill_box td {
+
+		width:310px;
+		height: 250px;
+		text-align: center;
+		vertical-align: middle;
+		align-items: center;
+		margin: 0px;
 }
 #skill_heading{
 
@@ -464,15 +484,17 @@ body, html{
 		color: rgb(255,255,255);
 		left: 15%;
 		top: 10%;
-		position: absolute;
+		position: inherit;
 }
 
 #skill_heading .red_line{
 	background-color: rgb(255,255,255);
+
 }
- #row_1,#row_2,#row_3{
-	display: block;
-}
+ /* #row_1 , #row_2, #row_3{
+	display: inline-block;
+	width: 930px;
+} */
 
 .skill_name{
 	display: block;
@@ -485,16 +507,13 @@ body, html{
 	width: 64px;
 	height: 64px;
 }
-.color_1,.color_2{
-	display: inline-block;
-	width:33%;
-	float: left;
-	height: 250px;
-	text-align: center;
-	vertical-align: middle;
-	align-items: center;
-}
 
+/* @media only screen and (max-width: 940px){
+	.color_1, .color_2{
+		float: none;
+		display: block;
+	}
+} */
 .color_1 div{
 	color:rgb(255,255,255);
 }
