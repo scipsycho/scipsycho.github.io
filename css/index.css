@@ -106,11 +106,16 @@ body, html{
 	.home{
 		display: none;
 	}
+  #top_panel{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.download_cv{
-
+		right: auto;
 	}
 }
-@media only screen and (max-width: 300px)
+@media only screen and (max-width: 299px)
 {
 	.download_cv{
 		display: none;
@@ -215,7 +220,9 @@ body, html{
 
 	font-family: data_font, "helvetica", Arial;
 
-
+  display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #info table{
 		width: 900px;
@@ -409,8 +416,9 @@ body, html{
 
 #navigation{
 	position: absolute;
+	display: inline-block;
 	top:90%;
-	left: 48%;
+	width: 100%;
 }
 
 #info_1, #info_2, #info_3, #info_4{
@@ -436,10 +444,11 @@ body, html{
 	background-color: rgb(255,255,255);
 }
 
+
 #Skills{
 	position: absolute;
 	/* display: inline-block; */
-	top: 175%;
+	top: 160%;
 	width: 100%;
 	height: 100%;
 	font-family: data_font;
@@ -511,35 +520,7 @@ body, html{
 	height: 64px;
 }
 
-@media only screen and (max-width: 930px){
-	#skill_box td{
-		width: 200px;
-		height: 150px;
-		font-size: 100%;
-	}
 
-	.skill_name{
-		font-size: 150%;
-		padding: 3px;
-	}
-	.lang_img{
-		width: 32px;
-		height: 32px;
-	}
-
-}
-
-@media only screen and (max-width: 610px){
-	#skill_box td{
-		width: 100px;
-		height:80px;
-		font-size: 50%;
-	}
-
-	.skill_name{
-		font-size: 100%;
-	}
-}
 
 .color_1 div{
 	color:rgb(255,255,255);
@@ -676,6 +657,7 @@ input,textarea{
 	color: rgba(36, 49, 72, 0.6);
 	font-family: data_font;
 	font-size: 125%%;
+
 	height: 100%;
 	margin-bottom: 0px;
 	display: inline-block;
@@ -779,5 +761,101 @@ input:focus,textarea:focus{
 	}
 	#footer .connection_links{
 		left:3%;
+	}
+}
+
+
+
+@media only screen and (max-width: 930px){
+
+	#skill_box {
+		top: 10%;
+	}
+	#skill_box td{
+		width: 200px;
+		height: 150px;
+		font-size: 100%;
+	}
+
+	.skill_name{
+		font-size: 150%;
+		padding: 3px;
+	}
+	.lang_img{
+		width: 32px;
+		height: 32px;
+	}
+
+	#Contact {
+		top: 250%;
+	}
+
+	#quick_id_table{
+		top: -3%;
+	}
+
+	#footer{
+		top: 315%;
+	}
+}
+
+@media only screen and (max-width: 610px){
+	#skill_box td{
+		width: 100px;
+		height:80px;
+		font-size: 50%;
+	}
+
+	.skill_name{
+		font-size: 100%;
+	}
+}
+
+@media only screen and (max-height: 815px){
+	.profile_photo_border{
+		border-radius: 100px;
+		border-width: 3px;
+	}
+	.profile_photo_border img{
+		width: 100px;
+		height: auto;
+	}
+
+	#info th {
+		font-size: 150%;
+	}
+	#info td {
+		font-size: 70%;
+	}
+
+	#quick_id_heading, #contact_me_heading{
+		font-size: 150%;
+	}
+
+	#quick_id_table {
+		top: -3%;
+	}
+
+	#quick_id_table th, #quick_id_table tr{
+		font-size: 70%;
+	}
+
+	#form_name, #form_message, #form_email, #form_subject, input, textarea{
+		font-size: 70%;
+	}
+
+	#footer {
+		font-size: 60%;
+	}
+
+	#Contact{
+		top: 265%;
+	}
+
+	#skill_box{
+		top: 0%;
+	}
+	#footer{
+		top:330%;
 	}
 }
