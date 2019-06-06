@@ -1,1 +1,17 @@
+@font-face {
+    font-family: "mrrobot";
+    src:  url("../fonts/mrrobot.ttf");
+}
 
+body {
+  background-color: black;
+}
+.heading {
+    color: red;
+    font-family: mrrobot;
+}
+
+pre{
+  color: white;
+  background-color: black;
+}
