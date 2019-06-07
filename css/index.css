@@ -35,7 +35,8 @@ body {
 
 #secondPage {
   position: relative;
-  background-color: rgba(255,0,0,0.8);
+  /* background-color: rgba(255,0,0,0.8); */
+  background-color: black;
 }
 
 
@@ -332,4 +333,23 @@ body {
   98% { top: -4.6px}
   99% { top: -4.8px}
   100% { top: -5.0px}
+}
+
+#secondPage .container {
+  padding-top: 10vh;
+}
+.terminal {
+  background-color: black;
+  color: white;
+  font-family: "Courier New"
+}
+
+.subheading {
+  font-family: mrrobot;
+  font-size: 4vw;
+  color: gray;
+  padding-top: 2vh;
+}
+.subheading::first-letter {
+  color: red;
 }
