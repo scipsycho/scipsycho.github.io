@@ -3,15 +3,36 @@
     src:  url("../fonts/mrrobot.ttf");
 }
 
-body {
-  background-color: black;
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+h1 {
+  margin: 0;
+}
+#firstPage, #secondPage {
+
+  width: inherit;
+  height: 100vh;
+  position: relative;
 }
 .heading {
     color: red;
     font-family: mrrobot;
+    text-align: center;
 }
 
-pre{
-  color: white;
+#firstPage {
   background-color: black;
+  position: relative;
+
+}
+
+#secondPage {
+  position: relative;
+  background-color: red;
 }
