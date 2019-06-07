@@ -8,23 +8,24 @@ html, body {
   padding: 0;
   border: 0;
   outline: 0;
+  text-align: center;
 }
 
 
-h1 {
-  margin: 0;
+body {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   min-width: 768px;
+   width: 100%;
 }
+
 #firstPage, #secondPage {
 
   width: inherit;
   height: 100vh;
   position: relative;
 }
-.heading {
-    color: red;
-    font-family: mrrobot;
-    text-align: center;
-}
+
 
 #firstPage {
   background-color: black;
@@ -34,5 +35,255 @@ h1 {
 
 #secondPage {
   position: relative;
-  background-color: red;
+  background-color: rgba(255,0,0,0.8);
+}
+
+
+.heading {
+    position: relative;
+    top: 40%;
+}
+
+.heading h1 {
+  margin: 0;
+  color: red;
+  font-family: mrrobot;
+  font-size: 4vw;
+}
+
+.heading h4 {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.5vw;
+}
+
+.footer {
+  position: relative;
+  top: 80%;
+}
+
+.footer button {
+  border-style: none;
+  background-color: inherit;
+  color: red;
+  font-size: 2vw;
+}
+
+.shake {
+  animation-name: shakeClickMe;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes shakeClickMe {
+  0% { top: -5.0px}
+  1% { top: -4.8px}
+  2% { top: -4.6px}
+  3% { top: -4.4px}
+  4% { top: -4.2px}
+  5% { top: -4.0px}
+  6% { top: -3.8px}
+  7% { top: -3.6px}
+  8% { top: -3.4px}
+  9% { top: -3.2px}
+  10% { top: -3.0px}
+  11% { top: -2.8px}
+  12% { top: -2.6px}
+  13% { top: -2.4px}
+  14% { top: -2.2px}
+  15% { top: -2.0px}
+  16% { top: -1.8px}
+  17% { top: -1.6px}
+  18% { top: -1.4px}
+  19% { top: -1.2px}
+  20% { top: -1.0px}
+  21% { top: -.8px}
+  22% { top: -.6px}
+  23% { top: -.4px}
+  24% { top: -.2px}
+  25% { top: 0px}
+  26% { top: .2px}
+  27% { top: .4px}
+  28% { top: .6px}
+  29% { top: .8px}
+  30% { top: 1.0px}
+  31% { top: 1.2px}
+  32% { top: 1.4px}
+  33% { top: 1.6px}
+  34% { top: 1.8px}
+  35% { top: 2.0px}
+  36% { top: 2.2px}
+  37% { top: 2.4px}
+  38% { top: 2.6px}
+  39% { top: 2.8px}
+  40% { top: 3.0px}
+  41% { top: 3.2px}
+  42% { top: 3.4px}
+  43% { top: 3.6px}
+  44% { top: 3.8px}
+  45% { top: 4.0px}
+  46% { top: 4.2px}
+  47% { top: 4.4px}
+  48% { top: 4.6px}
+  49% { top: 4.8px}
+  50% { top: 5.0px}
+  50% { top: 5.0px}
+  50% { top: 5.0px}
+  51% { top: 4.8px}
+  52% { top: 4.6px}
+  53% { top: 4.4px}
+  54% { top: 4.2px}
+  55% { top: 4.0px}
+  56% { top: 3.8px}
+  57% { top: 3.6px}
+  58% { top: 3.4px}
+  59% { top: 3.2px}
+  60% { top: 3.0px}
+  61% { top: 2.8px}
+  62% { top: 2.6px}
+  63% { top: 2.4px}
+  64% { top: 2.2px}
+  65% { top: 2.0px}
+  66% { top: 1.8px}
+  67% { top: 1.6px}
+  68% { top: 1.4px}
+  69% { top: 1.2px}
+  70% { top: 1.0px}
+  71% { top: .8px}
+  72% { top: .6px}
+  73% { top: .4px}
+  74% { top: .2px}
+  75% { top: 0px}
+  76% { top: -.2px}
+  77% { top: -.4px}
+  78% { top: -.6px}
+  79% { top: -.8px}
+  80% { top: -1.0px}
+  81% { top: -1.2px}
+  82% { top: -1.4px}
+  83% { top: -1.6px}
+  84% { top: -1.8px}
+  85% { top: -2.0px}
+  86% { top: -2.2px}
+  87% { top: -2.4px}
+  88% { top: -2.6px}
+  89% { top: -2.8px}
+  90% { top: -3.0px}
+  91% { top: -3.2px}
+  92% { top: -3.4px}
+  93% { top: -3.6px}
+  94% { top: -3.8px}
+  95% { top: -4.0px}
+  96% { top: -4.2px}
+  97% { top: -4.4px}
+  98% { top: -4.6px}
+  99% { top: -4.8px}
+  100% { top: -5.0px}
+
+}
+@@keyframes shakeClickMe {
+  0% { top: -5.0px}
+  1% { top: -4.8px}
+  2% { top: -4.6px}
+  3% { top: -4.4px}
+  4% { top: -4.2px}
+  5% { top: -4.0px}
+  6% { top: -3.8px}
+  7% { top: -3.6px}
+  8% { top: -3.4px}
+  9% { top: -3.2px}
+  10% { top: -3.0px}
+  11% { top: -2.8px}
+  12% { top: -2.6px}
+  13% { top: -2.4px}
+  14% { top: -2.2px}
+  15% { top: -2.0px}
+  16% { top: -1.8px}
+  17% { top: -1.6px}
+  18% { top: -1.4px}
+  19% { top: -1.2px}
+  20% { top: -1.0px}
+  21% { top: -.8px}
+  22% { top: -.6px}
+  23% { top: -.4px}
+  24% { top: -.2px}
+  25% { top: 0px}
+  26% { top: .2px}
+  27% { top: .4px}
+  28% { top: .6px}
+  29% { top: .8px}
+  30% { top: 1.0px}
+  31% { top: 1.2px}
+  32% { top: 1.4px}
+  33% { top: 1.6px}
+  34% { top: 1.8px}
+  35% { top: 2.0px}
+  36% { top: 2.2px}
+  37% { top: 2.4px}
+  38% { top: 2.6px}
+  39% { top: 2.8px}
+  40% { top: 3.0px}
+  41% { top: 3.2px}
+  42% { top: 3.4px}
+  43% { top: 3.6px}
+  44% { top: 3.8px}
+  45% { top: 4.0px}
+  46% { top: 4.2px}
+  47% { top: 4.4px}
+  48% { top: 4.6px}
+  49% { top: 4.8px}
+  50% { top: 5.0px}
+  50% { top: 5.0px}
+  50% { top: 5.0px}
+  51% { top: 4.8px}
+  52% { top: 4.6px}
+  53% { top: 4.4px}
+  54% { top: 4.2px}
+  55% { top: 4.0px}
+  56% { top: 3.8px}
+  57% { top: 3.6px}
+  58% { top: 3.4px}
+  59% { top: 3.2px}
+  60% { top: 3.0px}
+  61% { top: 2.8px}
+  62% { top: 2.6px}
+  63% { top: 2.4px}
+  64% { top: 2.2px}
+  65% { top: 2.0px}
+  66% { top: 1.8px}
+  67% { top: 1.6px}
+  68% { top: 1.4px}
+  69% { top: 1.2px}
+  70% { top: 1.0px}
+  71% { top: .8px}
+  72% { top: .6px}
+  73% { top: .4px}
+  74% { top: .2px}
+  75% { top: 0px}
+  76% { top: -.2px}
+  77% { top: -.4px}
+  78% { top: -.6px}
+  79% { top: -.8px}
+  80% { top: -1.0px}
+  81% { top: -1.2px}
+  82% { top: -1.4px}
+  83% { top: -1.6px}
+  84% { top: -1.8px}
+  85% { top: -2.0px}
+  86% { top: -2.2px}
+  87% { top: -2.4px}
+  88% { top: -2.6px}
+  89% { top: -2.8px}
+  90% { top: -3.0px}
+  91% { top: -3.2px}
+  92% { top: -3.4px}
+  93% { top: -3.6px}
+  94% { top: -3.8px}
+  95% { top: -4.0px}
+  96% { top: -4.2px}
+  97% { top: -4.4px}
+  98% { top: -4.6px}
+  99% { top: -4.8px}
+  100% { top: -5.0px}
 }
