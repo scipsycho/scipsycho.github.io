@@ -8,7 +8,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 
-const iconStyle = {border: "1px solid black", height: "100%", padding: "0 0 0 0", minHeight: 0};
+const iconStyle = {border: "1px solid black", height: "100%", padding: "0 0 0 0", minHeight: 0, minWidth: "30px"};
 export class Footer extends Component {
     render() {
         return (
@@ -46,7 +46,7 @@ export class Footer extends Component {
                             md={"auto"}
                             lg={"auto"}
                             xl={"auto"}
-                            style={{border: "1px solid magenta", maxWidth: "80%", height: "100%"}}
+                            style={{border: "1px solid magenta", maxWidth: "80%", height: "100%", minWidth: 0}}
                         >
                             <Tabs
                                 variant={"standard"}

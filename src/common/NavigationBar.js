@@ -39,7 +39,7 @@ export class NavigationBar extends Component {
                         md={"auto"}
                         lg={"auto"}
                         xl={"auto"}
-                        style={{border: "5px solid pink", maxWidth: "80%"}}
+                        style={{border: "5px solid pink", maxWidth: "70%"}}
                     >
                         <Tabs
                             variant={"scrollable"}
