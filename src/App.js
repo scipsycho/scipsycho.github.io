@@ -3,7 +3,7 @@ import {RootComponent} from "./common/RootComponent";
 import React from "react";
 import {createMuiTheme} from "@material-ui/core/styles";
 import yellow from "@material-ui/core/colors/yellow";
-import pink from "@material-ui/core/colors/pink";
+import grey from "@material-ui/core/colors/grey";
 import {ThemeProvider} from "@material-ui/core";
 
 const theme = createMuiTheme({
@@ -12,7 +12,7 @@ const theme = createMuiTheme({
                main: yellow[500]
            },
            secondary: {
-               main: pink[500]
+               main: grey[500]
            }
        }
 });
